@@ -6,12 +6,21 @@
 }
 
 @keyframes rotateSpan {
-    from {
+    0% {
         /* transform-origin: center; */
-        transform: rotateZ(0deg);
+        transform: translateY(0px);
     }
-    to {
-        transform: rotateZ(360deg);
+    25% {
+        transform: translateY(50px) rotateZ(180deg);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    75% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
 
