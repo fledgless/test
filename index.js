@@ -4,6 +4,6 @@ let spanDeux = document.querySelector("#span-2");
 // spanDeux.style.backgroundColor = "black";
 
 spanUn.addEventListener("click", function(){
-    spanDeux.classList.toggle("black");
+    spanDeux.classList.toggle("rotate");
 }
 )

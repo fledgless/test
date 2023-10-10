@@ -5,6 +5,16 @@
     box-shadow: none;
 }
 
+@keyframes rotateSpan {
+    from {
+        /* transform-origin: center; */
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
 #container {
     display: grid;
     min-height: 100vh;
@@ -24,8 +34,10 @@
     text-align: center;
 }
 
+
 #spans > span:nth-child(1) {
     background-color: aquamarine;
+    margin-bottom: 100px;
 }
 
 #spans > span:hover:nth-child(1) {
@@ -37,9 +49,9 @@
     background-color: blue;
 }
 
-#spans > span.black:nth-child(2) {
-    background-color: black;
-}
+#spans > span.rotate:nth-child(2) { 
+    animation: rotateSpan 2s infinite ease-in-out; 
+ }
 
 header, 
 footer {
