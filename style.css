@@ -21,15 +21,24 @@
     display: block;
     width: 150px;
     height: 50px;
-
+    text-align: center;
 }
 
 #spans > span:nth-child(1) {
     background-color: aquamarine;
 }
 
+#spans > span:hover:nth-child(1) {
+    background-color: #b9c929;
+    cursor: pointer;
+}
+
 #spans > span:nth-child(2) {
     background-color: blue;
+}
+
+#spans > span.black:nth-child(2) {
+    background-color: black;
 }
 
 header, 
