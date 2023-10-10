@@ -1,4 +1,11 @@
-div#container {
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+#container {
     display: grid;
     min-height: 100vh;
     grid-template-rows: 1fr 8fr 1fr;
@@ -11,5 +18,21 @@ div#container {
 }
 
 .span {
-    display: flex;
+    display: block;
+    width: 150px;
+    height: 50px;
+
+}
+
+#spans > span:nth-child(1) {
+    background-color: aquamarine;
+}
+
+#spans > span:nth-child(2) {
+    background-color: blue;
+}
+
+header, 
+footer {
+    background-color: black;
 }
